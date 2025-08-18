@@ -3,8 +3,7 @@ const express = require("express");
 const axios = require("axios");
 
 const router = express.Router();
-const TOGETHER_API_KEY =
-  "eaa47adbd11c3f67a99ccb12bb3bfba8ae7c8f4229f329d1bc9d1b0ca8d5d7bb";
+const TOGETHER_API_KEY = process.env.REACT_APP_TOGETHER_API_KEY;
 
 function safeJSONParse(text) {
   if (!text) return [];
