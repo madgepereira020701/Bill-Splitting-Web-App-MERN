@@ -1,0 +1,53 @@
+
+.leftarrow {
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+
+.splitsummary {
+    display: flex;
+    justify-content: space-between;
+    background: #f1f1f1;
+}
+
+
+.person-amount, .person-name {
+    font-weight: bold;
+    background: #f1f1f1;}
+
+div {
+    text-align: center;
+}
+
+.share-icon {
+    background-color: greenyellow;
+}
+
+.home {
+    background-color: white;
+    position: absolute;
+    margin-left: -22px;
+}
+.share,
+.backhome, .splitsummary {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem 1rem;
+    margin-top: 0.8rem;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.share {
+    background-color: greenyellow;
+    color: white;
+}
+
+.backhome {
+    background-color: white;
+    color: black;
+}
+

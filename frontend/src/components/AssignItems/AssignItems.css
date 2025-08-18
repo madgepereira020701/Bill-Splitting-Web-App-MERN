@@ -1,0 +1,224 @@
+.input-container {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    /* clean small gap */
+    width: 100%;
+}
+
+.assign-items {
+    overflow-x: hidden;
+}
+.input-group {
+    flex: 1;
+    /* ✅ stretches input across row */
+    height: 40px;
+    position: relative;
+    margin-right: 45px;
+    /* taller input */
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    max-width: none;
+    /* ✅ remove restriction */
+}
+
+.delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    flex-shrink: 0;
+    /* ✅ stays fixed size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-group {
+    /* fills remaining space */
+    height: 30px;
+    width: 100%;
+        max-width: 300px;    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.person.active {
+    color: white;
+    background-color: yellowgreen;
+}
+
+.person {
+    flex: 0 0 calc(20% - 10px);
+    /* 5 per line on large screens */
+    box-sizing: border-box;
+    height: 30px;
+    padding: 0 10px;
+    display: flex;
+    font-size: smaller;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: white;
+    white-space: nowrap;
+    text-align: center;
+    cursor: default;
+}
+
+li {
+    display: inline-block;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.product {
+    background-color: rgb(246, 253, 237);
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(246, 253, 237);
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    height: auto;
+    gap: 10px;
+}
+
+.customers {
+    background-color: rgb(246, 248, 237);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-items: right;
+    padding: 4px;
+    flex-shrink: 0;
+    /* instead of fixed px */
+}
+
+.bin {
+    color: yellowgreen;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.bin:hover {
+    color: red;
+}
+
+.add {
+    display: flex;
+    text-align: left;
+    gap: 8px;
+    justify-content: flex-start;
+    background: none;
+    border: 1px solid grey;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+
+.continue {
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 10px;
+    background: greenyellow;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.item-details {
+    background-color: rgb(246, 253, 237);
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 768px) {
+    .person {
+        flex: 0 0 calc(33.33% - 10px);
+        /* 3 per row */
+    }
+
+
+    .input-container {
+        flex-direction: row;
+        margin-right: 0;
+        gap: 8px;
+        padding: 5px;
+    }
+
+    .input-group {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .person {
+        flex: 0 0 calc(50% - 10px);
+        /* 2 per row */
+    }
+
+
+    .add,
+    .continue {
+        max-width: 100%;
+    }
+
+    .item {
+flex-wrap: nowrap;  
+justify-content: space-between; 
+align-items: center; }
+}
+
+
+@media (max-width: 768px) {
+    .input-container {
+        flex-direction: row;
+        gap: 6px;
+        padding: 5px;
+    }
+
+    .input-group {
+        flex: 1;
+        max-width: 100%;
+        /* ✅ full width on smaller screens */
+    }
+}

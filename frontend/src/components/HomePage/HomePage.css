@@ -1,0 +1,87 @@
+.homepage {
+    text-align: center;
+    padding: 2rem;
+}
+
+.homepage h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.homepage p {
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    line-height: 1.5;
+}
+
+button.scan,
+button.manual {    border: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1rem;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.manual {
+    background-color: white;
+    color: black;
+}
+
+.scan {
+    background-color: greenyellow;
+    color: white;
+}
+ .camera {
+    margin-right: 8px;
+    background-color: greenyellow;
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
+    .homepage h1 {
+        font-size: 2rem;
+    }
+
+    .homepage p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    button.scan,
+    button.manual {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+}
+
+/* Responsive styles for small mobile screens */
+@media (max-width: 480px) {
+    .homepage {
+        padding: 1rem;
+    }
+
+    .homepage h1 {
+        font-size: 1.6rem;
+    }
+
+    .homepage p {
+        font-size: 0.9rem;
+    }
+
+    button.scan,
+    button.manual {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    button .camera {
+        margin-right: 6px;
+    }
+}
