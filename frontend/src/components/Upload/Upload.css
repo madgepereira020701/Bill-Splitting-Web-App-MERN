@@ -11,9 +11,6 @@
     height: 500px;
 }
 
-
-
-
 img {
     max-width: 100%;
     max-height: 80%;
@@ -24,6 +21,7 @@ img {
     margin-left: 350px;
     object-fit: contain;
 }
+
 .upload-box {
     width: 400px;
     height: 500px;
@@ -36,13 +34,14 @@ img {
     gap: 10px;
     overflow: hidden;
 }
+
 .preview {
-  width: 100%;
-  height: flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 150px;
+    width: 100%;
+    height: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
 }
 
 .upload {
@@ -66,27 +65,27 @@ img {
     background-color: red;
 }
 
-
 .scan-btn {
     background-color: greenyellow;
 }
 
 /* Container around the image for positioning the scanner line */
 .preview-container {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 /* Scanning line that moves */
 .scanner-line {
-  position: absolute;
-  margin-left: 150px;
-  width: 400px;
-  height: 4px;
-  background: rgba(0, 255, 0, 0.8); /* Green scanning line */
-  animation: scan 2s ease-in-out infinite;
-  z-index: 2;
-  pointer-events: none;
+    position: absolute;
+    margin-left: 150px;
+    width: 400px;
+    height: 4px;
+    background: rgba(0, 255, 0, 0.8);
+    /* Green scanning line */
+    animation: scan 2s ease-in-out infinite;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .scan-overlay {
@@ -107,9 +106,17 @@ img {
 
 /* Animation to move line up and down */
 @keyframes scan {
-  0% { top: 0; }
-  50% { top: 90%; }
-  100% { top: 0; }
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 90%;
+    }
+
+    100% {
+        top: 0;
+    }
 }
 
 

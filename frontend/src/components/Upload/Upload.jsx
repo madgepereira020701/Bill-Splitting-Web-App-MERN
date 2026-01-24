@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import axios from "axios";
 import { FaArrowUpFromBracket, FaXmark } from 'react-icons/fa6';
-import { FaCamera } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import './Upload.css';
 

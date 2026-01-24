@@ -14,9 +14,8 @@ const HomePage = () => {
 <>  
 <div className='homepage'>   
 <h1>Scan. Tap. Split</h1>
-<p>Snap the reciept, tap your items, see who owes what. No sign-ups, no math, no drama</p>
+<p>Upload the clear reciept, tap your items, see who owes what.</p>
 <button className='scan' onClick={handleNavigate}><FaCamera size={20} className="camera"/>Scan Receipt</button><br />
-<button className='manual'>Enter Manually</button>
 </div>
 </>);
 }
