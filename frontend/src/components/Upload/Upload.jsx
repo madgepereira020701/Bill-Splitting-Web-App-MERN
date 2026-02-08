@@ -147,7 +147,7 @@ const scanReceipt = async() => {
 
             {file && !loading && (
                 <button onClick={scanReceipt} className="scan-btn">
-                    Scrape the Bill
+                    Scan the Bill
                 </button>
             )}
             {loading && <p>Scanning…</p>}
