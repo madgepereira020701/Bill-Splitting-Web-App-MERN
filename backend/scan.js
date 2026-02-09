@@ -80,8 +80,7 @@ router.post("/scan", async (req, res) => {
 
     /* ---------- AI PARSING USING OPENAI ---------- */
     const completion = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      temperature: 0,
+      model: "gpt-5-nano",
       messages: [
         {
           role: "system",
